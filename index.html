@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Портфолио sg19xx</title>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <div class="mainWindow">
+            <header>
+                <div class="header">
+                    <ul>
+                        <li class="home" style="color: orange" onclick="animatInfoOne('main', 'mainWrap', event); colorLink(event)">Главная</li>
+                        <li class="works" style="color: white" onclick="animatInfoOne('works', 'worksWrap', event); colorLink(event)">Работы</li>
+                        <li class="aboutMe" style="color: white" onclick="animatInfoOne('aboutMe', 'aboutMeWrap', event); colorLink(event)">Обо мне</li>
+                        <li class="contacts" style="color: white" onclick="animatInfoOne('contacts', 'contactsWrap', event); colorLink(event)">Контакты</li>
+                    </ul>
+                </div>
+            </header>
+
+            <main>
+                <div class="main">
+                    <div class="mainWrap temp">
+                        <h1>Привет друг.</h1>
+                        <h2>Меня зовут Сергей. Я занимаюсь web разработкой сайтов и приложений. Для ознакомления с моим творчеством к вашему вниманию раздел работы.</h2>
+                    </div>
+                </div>
+            </main>
+            
+            <footer>
+                <div class="footer">
+                    <p>2020 | Design by <a href="https://github.com/sg19xx">sg19xx</a></p>
+                </div>
+            </footer>
+        </div>
+
+        <script src="script/index.js"></script>
+    </body>
+</html>

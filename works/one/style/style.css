@@ -1,0 +1,123 @@
+@font-face {
+    font-family: FlowExt-Bold;
+    src: url(../fonts/FlowExt-Bold.otf);
+}
+        
+html, body {
+    box-sizing: border-box;
+    font-family: FlowExt-Bold;
+    outline: none;
+}
+
+.back {
+    position: absolute;
+    left: 40px;
+    top: 40px;
+    text-decoration: none;
+    padding: 8px;
+    background-color: cadetblue;
+    color: black;
+}
+
+.wrap-window {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 500px;
+    margin: 0 auto;
+}
+
+.left, .right {
+    display: inline-block;
+}
+
+.name-game {
+    text-align: center;
+    margin: 40px 0 0 0;
+}
+
+.container {
+    width: 220px;
+    height: 220px;
+    margin: 40px auto 40px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 10px;
+}
+
+.but {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background-color: rgba(127, 255, 212, 1);
+    cursor: pointer;
+}
+
+.but:hover {
+    opacity: .6;
+    border: 1px solid black;
+    transition-duration: .6s;
+}
+        
+.btn-start {
+    display: block;
+    text-align: center;
+    margin: 40px auto 0 auto;
+}
+
+.options-wrap {
+    display: block;
+    text-align: center;
+    margin: 20px 0 0 0;
+    padding: 0;
+}
+
+.options {
+    list-style-type: none;
+    text-align: left;
+    margin-left: 80px;
+}
+
+.statistics {
+    display: grid;
+    width: 214px;
+    height: 214px;
+    border: 1px solid black;
+    margin: 40px auto 22px auto;
+    grid-template-rows: 1fr 1fr;
+    text-align: center;
+    line-height: 72px;
+}
+        
+.loss-result {
+    text-align: center;
+    margin: 30px 0 0 0;
+    color: palevioletred;
+}
+
+.link-to-git {
+    display: inline-block;
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-image: url(../img/logo-git.png);
+    right: 20px;
+    top: 20px;
+}
+
+.link-to-git:hover {
+    opacity: .6;
+    transition-duration: .6s;
+}
+
+@media screen and (max-width:540px) {
+    #game {
+        min-width: 540px;
+    }
+
+    .link-to-git {
+        opacity: 0;
+        pointer-events: none;
+    }
+}

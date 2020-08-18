@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Simon The Game</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+</head>
+<body>
+    <div id="game">
+        <a href="/" v-if="true" class="back">Назад</a>
+        <h1 class="name-game">Simon The Game</h1>
+        <p v-if="hiddensLose" class="loss-result">Вам удалось продержатся раундов: {{this.tempRound}}</p>
+        <div class="wrap-window">
+
+            <div class="left">
+                <div class="container">
+                    <div style="pointer-events: none" class="but one" v-on:click="addArr(document.querySelector('.one'))
+                    soundClick(1)">
+                    </div>
+                    <div style="pointer-events: none" class="but two" v-on:click="addArr(document.querySelector('.two'))
+                    soundClick(2)">
+                    </div>
+                    <div style="pointer-events: none" class="but three" v-on:click="addArr(document.querySelector('.three'))
+                    soundClick(3)">
+                    </div>
+                    <div style="pointer-events: none" class="but four" v-on:click="addArr(document.querySelector('.four'))
+                    soundClick(4)">
+                    </div>
+                </div>
+                <button class="btn-start" v-on:click="btnClick">{{nbtn}}</button>
+            </div>
+            
+            <div class="right">
+                <div class="statistics">
+                    <p>Раунд: {{round}}</p>
+                    <p>Рекорд: {{record}}</p>
+                </div>
+                <ul class="options-wrap" v-on:change="levelСhange(event)">
+                    <li class="options"><input value="1" type="radio" checked=true name="options"><span>Легкий</span></li>
+                    <li class="options"><input value="2" type="radio" name="options"><span>Средний</span></li>
+                    <li class="options"><input value="3" type="radio" name="options"><span>Сложный</span></li>
+                </ul>
+            </div>
+
+        </div>
+        <a class="link-to-git" href="https://github.com/sg19xx/simon_the_game" target="_blank"></a>
+    </div>
+    <script src="script/index.js"></script>
+</body>
+</html>
