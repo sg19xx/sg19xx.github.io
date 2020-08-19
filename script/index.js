@@ -69,7 +69,7 @@ function aboutMe() {
 
     let spanSkill = document.createElement('ul');
 
-    let skillList = ['HTML', 'CSS', 'JavaScript', 'Ruby', 'PHP', 'Python']
+    let skillList = ['HTML', 'CSS', 'JavaScript', 'Ruby']
 
     for(let i = 0; i < skillList.length; i++) {
         let liSkill = document.createElement('li');
