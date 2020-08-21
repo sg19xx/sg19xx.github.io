@@ -126,12 +126,14 @@ function animatInfoTwo(typeInfo, className) {
     let stopInterval = setInterval(function() {
         if(opacity <= 1.01) {
             wrapInfo.style.opacity = opacity;
-            opacity += 0.01
+            opacity += 0.02
+            //1
         } else {
             clearInterval(stopInterval);
             clickNav = 0
         }
-    }, 4)
+    }, 1 )
+    //4
 }
 
 function animatInfoOne(typeInfo, className, event) {
@@ -142,13 +144,15 @@ function animatInfoOne(typeInfo, className, event) {
     let stopInterval = setInterval(function() {
         if(opacity >= 0) {
             wrapInfo.style.opacity = opacity;
-            opacity -= 0.01
+            opacity -= 0.02
+            //1
         } else {
             wrapInfo.parentElement.removeChild(wrapInfo);
             clearInterval(stopInterval);
             animatInfoTwo(typeInfo, className)
         }
-    }, 4)
+    }, 1)
+    //4
     }
 }
 

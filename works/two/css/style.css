@@ -1,0 +1,308 @@
+html, body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    overflow: hidden;
+    height: 100%;
+}
+.headerWrap {
+    width: 100%;
+    height: 70px;
+    background-color: #6600ff;
+}
+.wrapMainWindow {
+    display: grid;
+    grid-template-columns: 15% 85%;
+    width: 100%;
+    height: 100%;
+}
+.left {
+    border-right: 1px solid;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+.right {
+    border-left: 1px solid;
+    overflow: auto;
+    background-size: cover;
+}
+.ulNav li a {
+    display: block;
+   color: #fff; 
+   font-size: 26px;
+   text-decoration: none;
+   height: 100%;
+   line-height: 70px;
+   padding: 0 10px 0 10px;
+}
+.ulNav li {
+    list-style-type: none;
+    margin-right: 70px;
+    height: 70px;
+}
+.ulNav {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+.headerWrap {
+    display: flex;
+    justify-content: space-between;
+}
+.logo {
+    display: flex;
+    margin-left: 70px;
+    font-size: 30px;
+    align-items: center;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+.ulNav li a:hover {
+    background-color: rgba(86, 72, 212, 0.3);
+    transition-duration: 1s;
+}
+#lang {
+    position: absolute;
+    left: 4px;
+    top: 4px;
+}
+.left ul{
+    margin: 0;
+    padding: 0;
+}
+.left li{
+    display: flex;
+    width: 100%;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid;
+    cursor: pointer;
+}
+.left li:first-of-type:hover {
+    background-color: #fff;
+}
+.left li:first-of-type {
+    display: flex;
+    justify-content: space-around;
+    height: 30px;
+    cursor: default;
+}
+.left li:hover {
+    background-color: lightgray;
+    transition-duration: .6s;
+}
+.addNav, .delNav {
+    cursor: pointer;
+}
+.addNav:hover, .delNav:hover {
+    color: #6600ff;
+    transition-duration: .4s;
+    cursor: pointer;
+}
+.right {
+    background-image: url("../img/background.png");
+    background-position: bottom right;
+}
+.setingI {
+    width: 40px;
+    height: 40px;
+    padding: 15px 10px 15px 10px;
+    margin: 0;
+    cursor: pointer;
+}
+.setingI:hover {
+    background-color: rgba(86, 72, 212, 0.3);
+    transition-duration: 1s;
+}
+.ulNav .setingL {
+    margin-right: 30px;
+}
+.ulNav .joinL {
+    margin-right: 20px;
+}
+.modalSetting {
+    display: block;
+    height: 80%;
+    width: 80%;
+    background-color: #fff;
+    overflow: auto;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid lightgray;
+}
+.closeModal {
+    display: flex; 
+    position: absolute; 
+    top: 20px; right: 20px; 
+    height: 30px;
+    width: 90px; 
+    cursor: pointer;
+    padding: 0 10px 0 10px;
+    align-items: center;
+    background-color: #5a04db;
+    color: #fff;
+    border: 0;
+    justify-content: center;
+    font-weight: 800;
+}
+.sizeTextDocumentWrap {
+    display: flex;
+    width: 100%;
+    height: 100px;
+    background-color: lightgray;
+    margin: 140px 0 0 0;
+    justify-content: space-around;
+    align-items: center;
+}
+.clickColorSelect {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-color: black;
+}
+.clickColorSelectWraps {
+    display: flex;
+    width: 100%;
+    height: 100px;
+    border-bottom: 1px solid lightgray;
+    border-top: 1px solid lightgray;
+    margin: 20px 0 0 0;
+    justify-content: space-around;
+    align-items: center;
+}
+.elementSelectSizeParagraf:first-of-type {
+    margin: 0 0 0 -20px;
+}
+.clickSelectSizeWrap {
+    display: flex;
+    width: 100%;
+    height: 100px;
+    border-bottom: 1px solid lightgray;
+    border-top: 1px solid lightgray;
+    margin: 20px 0 0 0;
+    justify-content: center;
+    align-items: center;
+}
+.elementSelectSizeParagraf {
+    margin: 0 0 0 20px;
+}
+.clickSelectWrap {
+    margin: 70px 0 0 0;
+}
+.clickColorParagraf {
+    text-align: center;
+}
+.color0 {
+    background-color: #6600ff;
+}
+.color1 {
+    background-color: #4a76a8;
+}
+.color2 {
+    background-color: #e28655;
+}
+.color3 {
+    background-color: #C0DE98;
+}
+.color4 {
+    background-color: #221a69;
+}
+.color5 {
+    background-color: #F7B12D;
+}
+.color6 {
+    background-color: #629FBC;
+}
+.clickColorSelect {
+    cursor: pointer;
+}
+.clickColorSelect:hover {
+    opacity: .6;
+    transition-duration: .6s;
+}
+.clickSizeParagraf {
+    text-align: center;
+}
+.elementSelectSize {
+    margin: -1.5px 0 0 20px;
+}
+.btnApply {
+    display: block;
+    cursor: pointer;
+    margin: 20px auto 0 auto;
+    background-color: #6600ff;
+    color: #fff;
+    font-weight: 800;
+    border: 0;
+    height: 30px;
+}
+.opacityBlock {
+    background-color: #fff;
+    opacity: .6;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.windowNoteElement {
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    position: relative;
+    overflow: hidden;
+}
+.windowEditElements {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    background-image: url(../img/edit.png);
+    cursor: pointer;
+}
+.windowEditElementsHTML {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    background-image: url(../img/html.png);
+    cursor: pointer;
+}
+.windowEditElementsTXT {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    background-image: url(../img/txt.png);
+    cursor: pointer;
+}
+.windowEditNote {
+    display: block;
+    width: 100%;
+    height: 32px;
+    border-bottom: 1px solid lightgray;
+    position: fixed;
+    background-color: #fff;
+}
+.windowNoteNautilus {
+    display: block;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    padding: 33px 0 0 0;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    font-size: 20px;
+}
+.textareaEdit {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 33px;
+    left: 0;
+    border: 0;
+    font-size: 20px;
+}
