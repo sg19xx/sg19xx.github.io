@@ -18,7 +18,7 @@ function main() {
     h1.textContent = "Привет друг.";
 
     let h2 = document.createElement('h2');
-    h2.textContent = "Меня зовут Сергей. Я занимаюсь web разработкой сайтов и приложений. Для ознакомления с моим творчеством к вашему вниманию раздел работы.";
+    h2.textContent = "Меня зовут Сергей. Я являюсь Front-end разработчиком сайтов и веб-приложений. Для ознакомления с моим творчеством к вашему вниманию раздел работы.";
 
     mainWrap.appendChild(h1);
     mainWrap.appendChild(h2);
@@ -69,7 +69,7 @@ function aboutMe() {
 
     let spanSkill = document.createElement('ul');
 
-    let skillList = ['HTML', 'CSS', 'JavaScript', 'Ruby']
+    let skillList = ['HTML', 'CSS', 'JavaScript', 'React.js', 'Ruby']
 
     for(let i = 0; i < skillList.length; i++) {
         let liSkill = document.createElement('li');
