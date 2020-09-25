@@ -1,0 +1,150 @@
+@font-face {
+	font-family: 'Cera Pro Regular';
+	src: url('fonts/CeraPro-Regular.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Minecraft Rus';
+	src: url('fonts/Minecraft-Rus.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+html, body {
+	font-family: 'Cera Pro Regular';
+}
+
+.modal {
+	width: 967px;
+	height: 794px;
+	position: relative;
+	background-color: F8F8F8;
+	border: 1px solid lightgray;
+	border-radius: 15px;
+}
+
+.modal h1 {
+	margin: 30px auto 0 auto;
+	text-align: center;
+	font-size: 32px;
+	line-height: 40.22px;
+	font-weight: 500;
+	font-style: normal;
+}
+
+.modal h1 span {
+	color: #F1950C;
+}
+
+.box {
+	position: absolute;
+	width: 907px;
+	height: 577px;
+	left: 30px;
+	top: 100px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.item {
+	width: 289px;
+	height: 329px;
+	background-color: #FFF;
+	border: 1px solid #E4E4E4;
+	box-sizing: border-box;
+	box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.06);
+	border-radius: 15px;
+	flex-direction: row;
+	align-items: flex-start;
+}
+
+.item h3 {
+	margin: 0 0 30px 0;
+	text-align: center;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 24px;
+}
+
+.itemColor {
+	width: 289px;
+	height: 279px;
+}
+
+.textNickname {
+	position: absolute;
+	top: 458px;
+	left: 333.5px;
+	width: 300px;
+	height: 60px;
+	background-color: #FFF;
+	border: 1px solid #E4E4E4;
+	box-sizing: border-box;
+	border-radius: 8px;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 20px;
+	color: #BFBDBD;
+	text-align: center;
+}
+
+.line {
+	position: absolute;
+	width: 907px;
+	height: 1px;
+	left: 30px;
+	top: 549px;
+	background-color: #E4E4E4;
+}
+
+.resultWindow {
+	position: absolute;
+	width: 683px;
+	height: 97px;
+	left: 142px;
+	top: 580px;
+	background-color: #AC7474;
+	border-radius: 8px;
+	font-family: Minecraft Rus;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: Minecraft Rus;
+}
+
+.btnResult {
+	position: absolute;
+	width: 356px;
+	height: 57px;
+	left: 305px;
+	top: 707px;
+	background-color: #F1950C;
+	box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.06);
+	border-radius: 8px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #FFF;
+	border: 0px solid;
+	font-family: 'Cera Pro Regular';
+	font-style: normal;
+	font-weight: bold;
+	font-size: 20px;
+	line-height: 25px;
+}
+
+.circles {
+	display: block;
+	margin: 0 auto;
+}
+
+
+
+
+
+
